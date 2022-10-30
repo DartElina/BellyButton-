@@ -1,8 +1,9 @@
-body {background-color: powderblue;}
+body {background-color: hwb(273 3% 51%);}
+  
 
-h1   {color: blue;}
-
-.jumbotron mt-3 {
-    background-image: url('/static/images/bacteria.jpeg');
-    background-size: cover;
-    height: 100%;}
+.jumbotron {
+    color:aliceblue;
+    background-image: url("../images/bacteria.jpeg");
+    background-size: 100% 100%;
+    text-align: center;
+}

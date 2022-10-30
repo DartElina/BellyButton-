@@ -87,9 +87,7 @@ function init() {
       // 9. Create the layout for the bar chart. 
       var barLayout = {
         title: { text: '<b>Top 10 Bacteria Cultures Found</b>', size: 20 },
-        //bgcolor
-        //font
-  
+
       };
       // 10. Use Plotly to plot the data with the layout. 
       Plotly.newPlot("bar", barData, barLayout);
@@ -108,8 +106,8 @@ function init() {
         mode: "markers",
         marker: {
           color: otu_ids,
-          colorscale: 'Earth',
-          size: sample_values.map(num => num * 0.7)
+          colorscale: 'Electric',
+          size: sample_values.map(num => num)
         }
       };
   
@@ -119,8 +117,6 @@ function init() {
       // 2. Create the layout for the bubble chart.
       var bubbleLayout = {
         title: { text: '<b>Bacteria Cultures Present in Sample</b>', size: 20 },
-        //bgcolor
-        //font
         xaxis: {
           title: {
             text: "OTU ID",
